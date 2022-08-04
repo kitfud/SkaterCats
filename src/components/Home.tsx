@@ -1,14 +1,42 @@
 import React from 'react'
 import {Box} from '@mui/material'
+import Carousel from 'react-material-ui-carousel'
+import { Paper, Button } from '@mui/material'
+import img1 from '../img/504.png'
+import img2 from '../img/546.png'
+import img3 from '../img/611.png'
+import img5 from '../img/729.png'
+import img6 from '../img/739.png'
+import img7 from '../img/793.png'
+import img8 from '../img/871.png'
+import img9 from '../img/904.png'
+import img10 from '../img/978.png'
 
 type Props = {}
 
+const Example: Function = ()=>
+   {
+  var items: string[] = [img1,img2,img3,img5,img6,img7,img8,img9,img10]
+  
+  return( 
+    <Carousel>
+      {
+      items.map((i)=>{
+      return <img height='700' width='auto' src={i} alt="" />
+        })
+      }
+    </Carousel>
+  )
+   
+  }
+
+
 const Home = (props: Props) => {
   return (
-    <Box sx={{color:'orange'}}>
-           Home page
-    </Box>
-
+    <>
+    <Example />
+    </>
+   
   )
 }
 

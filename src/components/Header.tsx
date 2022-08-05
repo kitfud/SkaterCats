@@ -2,12 +2,12 @@ import React from 'react'
 import {Link} from 'react-router-dom' 
 import { AppBar, Toolbar, CssBaseline, Typography, IconButton, Box,Button } from '@mui/material'
 import SkateboardingIcon from '@mui/icons-material/Skateboarding';
+import Web3Connect from './Web3Connect'
 
 type Props = {}
 
 const Header = (props: Props) => {
   return ( 
-   
 <AppBar position='static'>
 <Toolbar sx={{ bgcolor: "lightgreen" }}>
 <IconButton component={Link}
@@ -56,8 +56,9 @@ const Header = (props: Props) => {
               </Typography>
             </Button>
           </Box>
-
+          <Web3Connect/>
 </Toolbar>
+
 </AppBar>
   )
 }

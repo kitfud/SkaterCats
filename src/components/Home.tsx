@@ -1,7 +1,5 @@
 import React from 'react'
-import {Box} from '@mui/material'
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
 import img1 from '../img/504.png'
 import img2 from '../img/546.png'
 import img3 from '../img/611.png'
@@ -16,13 +14,13 @@ type Props = {}
 
 const Example: Function = ()=>
    {
-  var items: string[] = [img1,img2,img3,img5,img6,img7,img8,img9,img10]
+var items: string[] = [img1,img2,img3,img5,img6,img7,img8,img9,img10]
   
   return( 
     <Carousel>
       {
       items.map((i)=>{
-      return <img height='700' width='auto' src={i} alt="" />
+      return <img key={i} height='700' width='auto' src={i} alt="" />
         })
       }
     </Carousel>

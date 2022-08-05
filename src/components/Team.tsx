@@ -14,7 +14,7 @@ skaterNames.forEach(i=>console.log(i))
 const TeamNames:any = ()=>{
     return(
         skaterNames.map((i)=>{
-        return <div>{i}</div>}
+        return <div key={i}>{i}</div>}
         )
     )
 }

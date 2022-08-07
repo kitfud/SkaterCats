@@ -30,7 +30,7 @@ const signer = useSelector((state:RootState)=>state.nftcontract.signer)
  const dispatch = useAppDispatch()
 
 
- const [connButtonText, setConnButtonText] = useState('Connect Wallet');
+ const [connButtonText, setConnButtonText] = useState('Web3 Connect Wallet');
  const [accountchanging, setAccountChanging] = useState(false)
  const [errorMessage, setErrorMessage] = useState <string|null> (null);
  const [connectButtonColor, setConnectButtonColor] = useState("secondary")
@@ -61,22 +61,48 @@ const accountChangedHandler = (newAccount:string) => {
     if (!accountchanging) {
         console.log(newAccount)
         setAccountChanging(true)
-        dispatch(setAccount(newAccount))
+        const newAccountResult = checkAccountType(newAccount)
+        dispatch(setAccount(newAccountResult))
         updateEthers();
-        setConnButtonText("CONNECTED: "+newAccount.substring(0, 6) + "..." + newAccount.substring(newAccount.length - 4, newAccount.length))
+        setConnButtonText("CONNECTED: "+newAccountResult.substring(0, 6) + "..." + newAccountResult.substring(newAccountResult.length - 4, newAccountResult.length))
         setConnected(true)
     }
 }
-const test = ()=>{
-    console.log("hello")
+
+const chainChangedHandler = () => {
+    // reload the page to avoid any errors with chain change mid use of application
+    window.location.reload();
 }
+
+const checkAccountType = (newAccount:any) => {
+    if (Array.isArray(newAccount)) {
+        return newAccount[0].toString()
+    }
+    else {
+        return newAccount
+    }
+}
+
+useEffect(() => {
+    if (window.ethereum) {
+        window.ethereum.on('accountsChanged', accountChangedHandler);
+        window.ethereum.on('chainChanged', chainChangedHandler);
+
+        return () => {
+            window.ethereum.removeListener('accountsChanged', accountChangedHandler);
+            window.ethereum.removeListener('chainChanged', chainChangedHandler);
+        }
+    }
+}, [])
+
+
 
    const updateEthers = async () => {
         let tempProvider = new ethers.providers.Web3Provider(window.ethereum);
         dispatch(setProvider(tempProvider))
         let tempSigner = tempProvider.getSigner();
         dispatch(setSigner(tempSigner))
-        let tempContract = new ethers.Contract(NFTminterADDRESS,NFTminterABI,tempSigner)
+        let tempContract = new ethers.Contract(NFTminterADDRESS,NFTminterABI,tempProvider)
         dispatch(setContract(tempContract))
     }
 

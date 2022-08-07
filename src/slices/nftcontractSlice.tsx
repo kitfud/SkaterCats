@@ -2,7 +2,7 @@ import {createSlice} from '@reduxjs/toolkit'
 
 
 interface nftContract {
-    contract: {}|null
+    contract: {balanceOf:Function,mintFee:Function,contractURI:Function,name:string,owner:string}|null
     provider:{}|null
     signer:{}|null
 }

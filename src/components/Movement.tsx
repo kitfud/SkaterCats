@@ -73,7 +73,7 @@ const Movement = (props: Props) => {
     <List>
                   <ListItem>
                     <ListItemIcon>
-                      <ForumIcon sx={{ color: "red", fontSize: '200%' }} />
+                      <ForumIcon sx={{ color: "purple", fontSize: '200%' }} />
                     </ListItemIcon>
                     <ListItemText>
                       When you buy a Skater Cat NFT you buy in to cats on skateboards! And with Polygon you also buy in to flexing on a budget! 
@@ -81,7 +81,7 @@ const Movement = (props: Props) => {
                   </ListItem>
                   <ListItem>
                     <ListItemIcon>
-                      <LocalGroceryStoreIcon sx={{ color: "red", fontSize: '200%' }} />
+                      <LocalGroceryStoreIcon sx={{ color: "purple", fontSize: '200%' }} />
                     </ListItemIcon>
                     <ListItemText>
                      Owners of Skater Cat NFTS get access to the secret Stash; some of the Skater cats favorite products 

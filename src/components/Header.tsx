@@ -12,8 +12,8 @@ const Header = (props: Props) => {
 <Toolbar sx={{ bgcolor: "lightgreen" }}>
 <IconButton component={Link}
             to="/">
-<SkateboardingIcon/>
-<Typography variant="h4" color="white">
+<SkateboardingIcon sx={{color:'purple'}}/>
+<Typography variant="h4" color="purple">
              SkaterCats
 </Typography>
 </IconButton>
@@ -30,28 +30,28 @@ const Header = (props: Props) => {
             <Button component={Link}
               to="/"
             >
-              <Typography sx={{ color: "white" }}>
+              <Typography sx={{ color: "purple" }}>
                 Home
               </Typography>
             </Button>
             <Button component={Link}
               to="/movement"
             >
-              <Typography sx={{ color: "white" }}>
+              <Typography sx={{ color: "purple" }}>
                 Movement
               </Typography>
             </Button>
             <Button component={Link}
               to="/team"
             >
-              <Typography sx={{ color: "white" }}>
+              <Typography sx={{ color: "purple" }}>
                 Team
               </Typography>
             </Button>
             <Button component={Link}
               to="/products"
             >
-              <Typography sx={{ color: "white" }}>
+              <Typography sx={{ color: "purple" }}>
                 Products
               </Typography>
             </Button>

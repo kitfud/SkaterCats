@@ -9,6 +9,8 @@ import img7 from '../img/793.png'
 import img8 from '../img/871.png'
 import img9 from '../img/904.png'
 import img10 from '../img/978.png'
+import {Button} from '@mui/material'
+import {Link} from 'react-router-dom'
 
 type Props = {}
 
@@ -17,13 +19,17 @@ const Example: Function = ()=>
 var items: string[] = [img1,img2,img3,img5,img6,img7,img8,img9,img10]
   
   return( 
-    <Carousel>
+    
+      <Carousel>
       {
       items.map((i)=>{
       return <img key={i} height='700' width='auto' src={i} alt="" />
         })
       }
     </Carousel>
+   
+   
+
   )
    
   }
@@ -33,8 +39,11 @@ const Home = (props: Props) => {
   return (
     <>
     <Example />
-    </>
+    <Link to='movement'>
+    <Button sx={{marginTop:1}} variant="contained">Learn More</Button>
+    </Link>
    
+    </>
   )
 }
 

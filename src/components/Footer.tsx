@@ -14,7 +14,7 @@ const Footer = (props: Props) => {
    
      <AppBar position='static'>
 <Toolbar sx={{ justifyContent: 'center', bgcolor:'lightgreen' }} >
-  <Typography color="white">
+  <Typography color="purple">
     SkaterCats 2022
   </Typography>
 </Toolbar>

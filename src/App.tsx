@@ -9,8 +9,11 @@ import Footer from './components/Footer';
 import Products from './components/Products';
 import { Paper,Grid,Box } from '@mui/material';
 import React from 'react'
+import Cat from './components/Cat';
+import { match } from 'assert';
 
 function App() {
+ 
   return (
     <div className='App'>
     <Header/>
@@ -22,6 +25,7 @@ function App() {
       <Route path='movement' element={<Movement/>} />
       <Route path='team' element={<Team/>} />
       <Route path='products' element={<Products/>} />
+      <Route path='cat/:name' element={<Cat/>}/>
     </Routes>
     </Paper>
    </Grid>

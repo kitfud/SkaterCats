@@ -17,7 +17,7 @@ import {
   import catImage from '../img/516.png'
 import ForumIcon from '@mui/icons-material/Forum';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
-
+import {Link} from 'react-router-dom'
 type Props = {}
 
 const Movement = (props: Props) => {
@@ -55,7 +55,10 @@ const Movement = (props: Props) => {
         <CardActions>
         <Grid container display='flex' direction='column'>
           <Grid item>
-          <Button size="large" variant='contained' color='warning'>Mint An NFT</Button>
+            <a href='https://www.autominter.com/mint/62eabae4e456163f1a39b95b' target="_blank">
+            <Button size="large" variant='contained' color='warning'>Head to NFT Minting Page</Button>
+            </a>
+         
           </Grid>
         </Grid>    
         </CardActions>
@@ -73,7 +76,7 @@ const Movement = (props: Props) => {
                       <ForumIcon sx={{ color: "red", fontSize: '200%' }} />
                     </ListItemIcon>
                     <ListItemText>
-                      When you buy a Skater Cat NFT you buy in to cats on skateboards!
+                      When you buy a Skater Cat NFT you buy in to cats on skateboards! And with Polygon you also buy in to flexing on a budget! 
                     </ListItemText>
                   </ListItem>
                   <ListItem>

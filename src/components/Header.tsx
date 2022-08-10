@@ -3,8 +3,12 @@ import {Link} from 'react-router-dom'
 import { AppBar, Toolbar, CssBaseline, Typography, IconButton, Box,Button } from '@mui/material'
 import SkateboardingIcon from '@mui/icons-material/Skateboarding';
 import Web3Connect from './Web3Connect'
+import SkaterCatLogo from '../img/SkaterCatLogo.png'
+import{ReactComponent as CatLogo} from "../img/SkaterCatLogo.svg"
+import SvgIcon from '@mui/material/SvgIcon';
 
 type Props = {}
+
 
 const Header = (props: Props) => {
   return ( 
@@ -12,7 +16,11 @@ const Header = (props: Props) => {
 <Toolbar sx={{ bgcolor: "lightgreen" }}>
 <IconButton component={Link}
             to="/">
-<SkateboardingIcon sx={{color:'purple'}}/>
+{/* <SkateboardingIcon sx={{color:'purple'}}/> */}
+<SvgIcon>
+  <CatLogo/>
+</SvgIcon>
+
 <Typography variant="h4" color="purple">
              SkaterCats
 </Typography>

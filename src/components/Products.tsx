@@ -78,7 +78,7 @@ return (
          ):(
           nftsowned>0?(
             <>
-            <Typography sx={{marginBottom:2}}>Welcome to the Stash</Typography>
+            <Typography variant='h3' color='purple' sx={{marginBottom:2}}>Welcome to the Stash</Typography>
             <Grid container direction="row" justifyContent='center' alignItems='center'>
             {
                 stashList.slice().map((item)=>{
@@ -98,7 +98,7 @@ return (
                   )
                 })
             }
-           <Grid sx={{marginTop:2}} sm={12} md={8} item>
+           <Grid sx={{marginTop:2, marginBottom:2}} sm={12} md={8} item>
            <img width='50%'src={loveCat} alt="loveCat"/>
            </Grid>
             

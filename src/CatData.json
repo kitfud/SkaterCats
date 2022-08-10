@@ -30,5 +30,20 @@
            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B00WZOU84M&asins=B00WZOU84M&linkId=e3b7be46f999cc30d057f94d3af967ee&show_border=true&link_opens_in_new_window=true",
            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B087GWBFJV&asins=B087GWBFJV&linkId=a4b8f999add28f38fef891053a6082f8&show_border=true&link_opens_in_new_window=true"
         ]
+    },
+    "Stash":{
+        "items":[
+           
+            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B004FELIOE&asins=B004FELIOE&linkId=28d6390ac415bd8f2ca1d147ba368514&show_border=true&link_opens_in_new_window=true",
+            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B09NCMGFH3&asins=B09NCMGFH3&linkId=ea5042b75700a1406602800ce16eecdc&show_border=true&link_opens_in_new_window=true",
+            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B07WGHX6M3&asins=B07WGHX6M3&linkId=4d1d801f7e16d503fc30c4a054ff9347&show_border=true&link_opens_in_new_window=true",
+            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B0002MKBWI&asins=B0002MKBWI&linkId=66e4b2f2604d17fce5a21840fbe42eca&show_border=true&link_opens_in_new_window=true",
+            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B005CGUT12&asins=B005CGUT12&linkId=09f6fcbe5e6d03bcec05f805d6f90e40&show_border=true&link_opens_in_new_window=true",
+            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B07H42DV9J&asins=B07H42DV9J&linkId=398a1f7b459b42e24d169042a45cc1c0&show_border=true&link_opens_in_new_window=true",
+            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B08HJMSZDG&asins=B08HJMSZDG&linkId=8da285fc76ee9e145c8973a37745ec42&show_border=true&link_opens_in_new_window=true",
+            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B01G3IBQIC&asins=B01G3IBQIC&linkId=0599fbb2083a17ed34d3c5c41e77012c&show_border=true&link_opens_in_new_window=true",
+            "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=kitsrecommend-20&language=en_US&marketplace=amazon&region=US&placement=B07BND4R2C&asins=B07BND4R2C&linkId=db1512fcf86a9c9f34ea2548af6a81f9&show_border=true&link_opens_in_new_window=true"
+        ]
     }
+
 }

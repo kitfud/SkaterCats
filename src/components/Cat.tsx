@@ -51,7 +51,6 @@ if (catName){
     {
     catData.gear?
       catData.gear.slice().map((item)=>{
-        console.log("item",item)
         return (
       <iframe 
      width='120px'

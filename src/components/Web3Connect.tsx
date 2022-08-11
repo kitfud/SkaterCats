@@ -33,18 +33,16 @@ const signer = useSelector((state:RootState)=>state.nftcontract.signer)
  const [connButtonText, setConnButtonText] = useState('Web3 Connect Wallet');
  const [accountchanging, setAccountChanging] = useState(false)
  const [errorMessage, setErrorMessage] = useState <string|null> (null);
- const [connectButtonColor, setConnectButtonColor] = useState("secondary")
+ const [connectButtonColor, setConnectButtonColor] = useState<string>('purple')
  const [connected, setConnected] = useState(false)
  
  const connectWalletHandler = () => {
-
-    console.log("connecting")
 
     if (window.ethereum && window.ethereum.isMetaMask) {
         window.ethereum.request({ method: 'eth_requestAccounts' })
             .then((result:any) => {
                 accountChangedHandler(result[0]);
-                setConnectButtonColor("success")
+                setConnectButtonColor("#3f51b5")
             })
             .catch((error:any) => {
                 console.log('error')
@@ -59,7 +57,6 @@ const signer = useSelector((state:RootState)=>state.nftcontract.signer)
 
 const accountChangedHandler = (newAccount:string) => {
     if (!accountchanging) {
-        console.log(newAccount)
         setAccountChanging(true)
         const newAccountResult = checkAccountType(newAccount)
         dispatch(setAccount(newAccountResult))
@@ -108,7 +105,12 @@ useEffect(() => {
 
   return (
   <>
-  <Button variant="contained" onClick={()=>connectWalletHandler()}>
+  <Button
+    sx={{
+        backgroundColor:connectButtonColor
+    }}
+    variant="contained" 
+    onClick={()=>connectWalletHandler()}>
    {connButtonText} 
     </Button>
   </>   

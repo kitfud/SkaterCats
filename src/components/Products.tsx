@@ -42,9 +42,7 @@ function triggerProcessingOff(){
   setProcessing(false)
 }
 
-useEffect(()=>{
-console.log("nfts owned", nftsowned)
-},[nftsowned])
+
 
 
 const MintNFT = ()=>{
@@ -83,7 +81,7 @@ return (
             {
                 stashList.slice().map((item)=>{
                   return(
-                    <Grid sm={6} md={2} lg={1} item>
+                    <Grid key={item} sm={6} md={2} lg={1} item>
 
                     <iframe 
                     width='120px'

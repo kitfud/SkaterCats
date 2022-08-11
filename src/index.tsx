@@ -5,16 +5,27 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import {Provider} from 'react-redux'
 import {store} from './store'
+import { createTheme, ThemeProvider } from "@mui/material";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
+const theme = createTheme({
+  typography: {
+    fontFamily: ["Rubik Marker Hatch", "cursive"].join(","),
+  },
+});
+
+
 root.render(
+<ThemeProvider theme={theme}>
 <BrowserRouter> 
 <Provider store={store}>
 <App />
 </Provider>
 </BrowserRouter>
+</ThemeProvider>
+
 );
 

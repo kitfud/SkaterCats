@@ -53,6 +53,7 @@ if (catName){
       catData.gear.slice().map((item)=>{
         return (
       <iframe 
+     key={item}
      width='120px'
      height='240px'
      marginWidth={0}

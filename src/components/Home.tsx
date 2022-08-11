@@ -1,14 +1,5 @@
 import React from 'react'
 import Carousel from 'react-material-ui-carousel'
-import img1 from '../img/504.png'
-import img2 from '../img/546.png'
-import img3 from '../img/611.png'
-import img5 from '../img/729.png'
-import img6 from '../img/739.png'
-import img7 from '../img/793.png'
-import img8 from '../img/871.png'
-import img9 from '../img/904.png'
-import img10 from '../img/978.png'
 import {Button} from '@mui/material'
 import {Link} from 'react-router-dom'
 
@@ -16,7 +7,18 @@ type Props = {}
 
 const Example: Function = ()=>
    {
-var items: string[] = [img1,img2,img3,img5,img6,img7,img8,img9,img10]
+var items: string[] = [
+  'https://ipfs.io/ipfs/QmZL3QbCXrvt1pTsBFTTpzABdwN3RopGYYREpWkEaekcsF?filename=504.png',
+  'https://ipfs.io/ipfs/QmbYG1zStJpvJjiTb2hLTBKJwShuitfAL2VWCTHZiK7LAq?filename=546.png',
+  'https://ipfs.io/ipfs/QmeN8MwGCC7eE22KapUNdjkrPtMUwP32YGBgUvvciHmLNr?filename=611.png',
+  'https://ipfs.io/ipfs/QmTYMxxo839AcoyprvwrYdPBAVyBN1FjZg81VrpxeSLrm7?filename=697.png',
+  'https://ipfs.io/ipfs/QmT4zEUwiey31ZujBvxZkMTVtTsNRPb5ktUEwQbFBb2JnZ?filename=729.png',
+  'https://ipfs.io/ipfs/QmUoFiXV52hxDPmrVcWaQ43RL56qdUmym2KDyQB7ZJmLyr?filename=739.png',
+  'https://ipfs.io/ipfs/Qmd83rn2jnQV6kHDrZpnoM2efP5THC3jLKTorvivZydYbv?filename=793.png',
+  'https://ipfs.io/ipfs/QmekbMywQe2QkxxQyo7byzjbkcQdaLCum1oveYYN97P7hD?filename=871.png',
+  'https://ipfs.io/ipfs/QmWZUWwAH9sVJXkyw2vmvSe6QxTRVj6GekVLJC9DD6Noy5?filename=904.png',
+  'https://ipfs.io/ipfs/QmYCbvjXiKaiNaNQa6MFCYqR5Q3Q81K1dLK49dgb85Jtij?filename=978.png'
+]
   
   return( 
     

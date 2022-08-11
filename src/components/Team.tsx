@@ -28,14 +28,14 @@ type Props = {}
 const Team = (props: Props) => {
 
 const skaterNames = useSelector((state:RootState) => state.skaters.names)
-skaterNames.forEach(i=>console.log(i))
+
 
 const TeamNames:any = ()=>{
     return(
         skaterNames.map((i)=>{
         return (
        
-        <Box sx={{display:'inline-block', justifyContent:'center', alignItems:'center',width:1/2 }}>
+        <Box key={i} sx={{display:'inline-block', justifyContent:'center', alignItems:'center',width:1/2 }}>
             <Card variant='elevation' sx={{padding:2}}>
            
             <CardMedia

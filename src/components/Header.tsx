@@ -38,7 +38,7 @@ const Header = (props: Props) => {
             <Button component={Link}
               to="/"
             >
-              <Typography sx={{ color: "purple" }}>
+              <Typography sx={{color: "purple" }}>
                 Home
               </Typography>
             </Button>

@@ -14,7 +14,7 @@ import {
   ListItemText,
   ListItemIcon
   } from '@mui/material'
-  import catImage from '../img/516.png'
+import catImage from '../img/516.png'
 import ForumIcon from '@mui/icons-material/Forum';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import {Link} from 'react-router-dom'
@@ -28,7 +28,7 @@ const Movement = (props: Props) => {
       <CardMedia
         component='img'
         height='100%'
-        image={catImage}
+        image='https://ipfs.io/ipfs/QmYvvxaDgQ7Jz6GSVvBe161MQG2mX5qW4XkqrwLaAG6mS6?filename=516.png'
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -79,7 +79,7 @@ const Movement = (props: Props) => {
                     <ListItemIcon>
                       <ForumIcon sx={{ color: "purple", fontSize: '200%' }} />
                     </ListItemIcon>
-                    <ListItemText>
+                    <ListItemText sx={{color:"purple"}}>
                       When you buy a Skater Cat NFT you buy in to cats on skateboards! And with Polygon you also buy in to flexing on a budget! 
                     </ListItemText>
                   </ListItem>
@@ -87,7 +87,7 @@ const Movement = (props: Props) => {
                     <ListItemIcon>
                       <LocalGroceryStoreIcon sx={{ color: "purple", fontSize: '200%' }} />
                     </ListItemIcon>
-                    <ListItemText>
+                    <ListItemText sx={{color:"purple"}}>
                     Owners of Skater Cat NFTS get access to the secret Stash; some of the Skater cats favorite products 
                      likely to make any cat swoon! 
                     </ListItemText>

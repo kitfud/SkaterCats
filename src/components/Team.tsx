@@ -45,7 +45,7 @@ const TeamNames:any = ()=>{
                 />
             <CardHeader title={i} />
             <Link to={`/cat/${i}`}>
-            <Button variant='contained'>Learn more about {i}'s cool style</Button>
+            <Button sx={{backgroundColor:'#3f51b5'}} variant='contained'>Learn more about {i}'s cool style</Button>
             </Link>
             
             </Card>

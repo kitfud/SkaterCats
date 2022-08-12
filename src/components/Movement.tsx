@@ -18,13 +18,15 @@ import catImage from '../img/516.png'
 import ForumIcon from '@mui/icons-material/Forum';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import {Link} from 'react-router-dom'
+import AcUnitIcon from '@mui/icons-material/AcUnit';
+
 type Props = {}
 
 const Movement = (props: Props) => {
   return (
     <>
     <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-    <Card sx={{ maxWidth: 600 }}>
+    <Card sx={{ maxWidth: 700 }}>
       <CardMedia
         component='img'
         height='100%'
@@ -88,8 +90,17 @@ const Movement = (props: Props) => {
                       <LocalGroceryStoreIcon sx={{ color: "purple", fontSize: '200%' }} />
                     </ListItemIcon>
                     <ListItemText sx={{color:"purple"}}>
-                    Owners of Skater Cat NFTS get access to the secret Stash; some of the Skater cats favorite products 
+                    Owners of Skater Cat NFTS get access to the secret Stash in the 'Products' tab. A collection of the Skater cats favorite products 
                      likely to make any cat swoon! 
+                    </ListItemText>
+                  </ListItem>
+                  <ListItem>
+                    <ListItemIcon>
+                      <AcUnitIcon sx={{ color: "purple", fontSize: '200%' }} />
+                    </ListItemIcon>
+                    <ListItemText sx={{color:"purple"}}>
+                    Skater Cat NFTs are generative art with only 1000 cats to be minted. You want rare? Then you need 
+                    Bobo with the vampire teeth. 
                     </ListItemText>
                   </ListItem>
       </List>

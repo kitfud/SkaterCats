@@ -44,7 +44,6 @@ const Home = (props: Props) => {
     <Link to='movement'>
     <Button sx={{marginTop:1}} variant="contained">Learn More</Button>
     </Link>
-   
     </>
   )
 }

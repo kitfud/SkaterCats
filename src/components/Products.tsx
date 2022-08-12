@@ -81,7 +81,7 @@ return (
             {
                 stashList.slice().map((item)=>{
                   return(
-                    <Grid key={item} sm={6} md={2} lg={1} item>
+                    <Grid key={item} sm={12} md={3} lg={1} item>
 
                     <iframe 
                     width='120px'

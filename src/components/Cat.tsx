@@ -16,13 +16,12 @@ interface catData{
 const [catData, setCatData] = useState<catData>({'description':undefined,'gear':undefined})
 const catObj:{}=catJSON
 
-useEffect(()=>{
-    window.scrollTo(0, 0)
-
+useEffect(()=>{  
 if (catName){
    setCatData(catJSON[catName as keyof typeof catObj])
 }
 },[])
+
 
   return (
     
@@ -35,18 +34,21 @@ if (catName){
       height='20%'
       width='20%'
       image={require(`../img/${catName}.png`)}/>
-      
     </Card>
     </Grid>
    
-    <Grid item md={6}lg={6} >
-    <Card >
+    <Grid item sm={12} md={6} lg={6} >
+    <Card sx={{padding:2}}>
     <CardHeader title={"About " +catName}/>
     <Typography>
       {catData.description}
     </Typography>
     </Card>
     <CardHeader title={catName+"'s"+" Gear"}/>
+
+    <Grid container direction="row">
+   
+      <Grid item sm={12} md={12}>
     <Box>
     {
     catData.gear?
@@ -55,7 +57,7 @@ if (catName){
       <iframe 
      key={item}
      width='120px'
-     height='240px'
+     height='260px'
      marginWidth={0}
      marginHeight={0}
      scrolling='0'
@@ -65,6 +67,13 @@ if (catName){
       }):null
     }
     </Box>
+    </Grid>
+      </Grid>
+    
+  
+   
+
+  
     <CardActions>
         <Grid container direction="column">
       <Grid item >

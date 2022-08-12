@@ -1,29 +1,15 @@
 import React from 'react'
 import {useSelector} from 'react-redux'
 import { RootState } from '../store'
-import {useEffect} from 'react';
-import { dividerClasses } from '@mui/material';
 import {Link} from 'react-router-dom'
 import {
     Card,
     Button,
-    Typography,
-    CardContent,
-    CardActions,
     CardMedia,
     CardHeader,
     Box,
     Grid,
-    List,
-    ListItem,
-    ListItemText,
-    ListItemIcon,
-
     } from '@mui/material'
-import catImage from '../img/516.png'
-import BoboFace from '../img/BoboFace.png'
-import { purple } from '@mui/material/colors';
-
 
 
 type Props = {}
@@ -38,8 +24,8 @@ const TeamNames:any = ()=>{
             {
         skaterNames.map((i)=>{
         return (
-            <Grid item sm={12} md={6}>
-            <Box key={i} sx={{display:'inline-block', justifyContent:'center', alignItems:'center' }} >
+            <Grid key={i} item sm={12} md={6}>
+            <Box  sx={{display:'inline-block', justifyContent:'center', alignItems:'center' }} >
             <Card variant='elevation' sx={{padding:2}}>
             <CardMedia
                 component='img'

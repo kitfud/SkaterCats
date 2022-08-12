@@ -1,9 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom' 
-import { AppBar, Toolbar, CssBaseline, Typography, IconButton, Box,Button } from '@mui/material'
-import SkateboardingIcon from '@mui/icons-material/Skateboarding';
+import { AppBar, Toolbar, Typography, IconButton, Box,Button } from '@mui/material'
 import Web3Connect from './Web3Connect'
-import SkaterCatLogo from '../img/SkaterCatLogo.png'
 import{ReactComponent as CatLogo} from "../img/SkaterCatLogo.svg"
 import SvgIcon from '@mui/material/SvgIcon';
 

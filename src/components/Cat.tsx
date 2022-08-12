@@ -69,11 +69,6 @@ if (catName){
     </Box>
     </Grid>
       </Grid>
-    
-  
-   
-
-  
     <CardActions>
         <Grid container direction="column">
       <Grid item >

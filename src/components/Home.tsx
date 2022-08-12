@@ -29,8 +29,6 @@ var items: string[] = [
         })
       }
     </Carousel>
-   
-   
 
   )
    

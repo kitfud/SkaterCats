@@ -16,7 +16,6 @@ const Products = (props: Props) => {
 
   const currentAccount = useSelector((state:RootState)=> state.user.defaultAccount)
   const nftContract = useSelector((state:RootState)=>state.nftcontract.contract)
-  const provider = useSelector((state:RootState)=>state.nftcontract.provider)
   const nftsowned = useAppSelector(state=>state.user.nftowned)
 
   const dispatch = useAppDispatch()
@@ -41,8 +40,6 @@ async function hasSkaterCat (){
 function triggerProcessingOff(){
   setProcessing(false)
 }
-
-
 
 
 const MintNFT = ()=>{

@@ -17,7 +17,7 @@ function App() {
   return (
     <div className='App'>
     <Header/>
-   <Grid sx={{padding:2}} container direction='column'alignItems='center'>
+   <Grid sx={{padding:2}} container direction='column' alignItems='center'>
    <Paper sx={{overflow:'auto', height:'80vh',width:'100%'}}>
     <Routes>
       <Route path='/' element={<Home/>} />

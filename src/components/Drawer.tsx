@@ -5,6 +5,7 @@ import {
   List,
   ListItem,
   ListItemText,
+  Typography
 
 } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -23,22 +24,38 @@ function DrawerComponent() {
         <List>
          <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/">Home</Link>
+              <Link to="/">
+                <Typography variant="h6" color="purple">
+                Home
+                </Typography>
+                </Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/movement">Movement</Link>
+              <Link to="/movement">
+                <Typography variant="h6" color="purple">
+                Movement
+                </Typography>
+                </Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/team">Team</Link>
+              <Link to="/team">
+                <Typography variant="h6" color="purple">
+                Team
+                </Typography>
+                </Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/products">Products</Link>
+              <Link to="/products">
+                <Typography variant="h6" color="purple">
+                Products
+                </Typography>
+                </Link>
             </ListItemText>
           </ListItem>
         </List>

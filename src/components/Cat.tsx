@@ -31,8 +31,7 @@ if (catName){
     <Card >
       <CardMedia 
       component='img'
-      height='20%'
-      width='20%'
+      sx={{height:'100%'}}
       image={require(`../img/${catName}.png`)}/>
     </Card>
     </Grid>

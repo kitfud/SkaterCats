@@ -1,20 +1,57 @@
 import React from 'react'
 import {Link} from 'react-router-dom' 
-import { AppBar, Toolbar, Typography, IconButton, Box,Button } from '@mui/material'
+import { AppBar,
+   Toolbar, 
+   Typography, 
+   IconButton, 
+   Box,
+   Button,
+  Grid,
+   useTheme,
+   useMediaQuery
+   } from '@mui/material'
 import Web3Connect from './Web3Connect'
 import{ReactComponent as CatLogo} from "../img/SkaterCatLogo.svg"
 import SvgIcon from '@mui/material/SvgIcon';
+import DrawerComponent from "./Drawer"
+
 
 type Props = {}
 
 
 const Header = (props: Props) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"))
+
+
   return ( 
-<AppBar position='static'>
-<Toolbar sx={{ bgcolor: "lightgreen" }}>
+<AppBar sx={{bgcolor:'lightgreen'}} position='static'>
+
+  {isMobile?(<>
+
 <IconButton component={Link}
             to="/">
-{/* <SkateboardingIcon sx={{color:'purple'}}/> */}
+<SvgIcon>
+  <CatLogo/>
+</SvgIcon>
+
+<Typography variant="h4" color="purple">
+             SkaterCats
+</Typography>
+  </IconButton>
+
+<Grid item sm={5}>
+<DrawerComponent/>
+</Grid>
+
+  
+  <Web3Connect/>
+  </>
+
+  ):(
+    <Toolbar sx={{ bgcolor: "lightgreen" }}>
+<IconButton component={Link}
+            to="/">
 <SvgIcon>
   <CatLogo/>
 </SvgIcon>
@@ -26,13 +63,14 @@ const Header = (props: Props) => {
 
 <Box
             sx={{
-              width: "50%",
+              width: {sm:'20%',md:'90%'},
               mx: "auto",
               bgcolor: "none",
               display: "flex",
               justifyContent: "space-around",
               alignItems: "center"
             }}>
+
             <Button component={Link}
               to="/"
             >
@@ -40,6 +78,7 @@ const Header = (props: Props) => {
                 Home
               </Typography>
             </Button>
+
             <Button component={Link}
               to="/movement"
             >
@@ -63,8 +102,8 @@ const Header = (props: Props) => {
             </Button>
           </Box>
           <Web3Connect/>
-</Toolbar>
-
+</Toolbar>)
+}
 </AppBar>
   )
 }

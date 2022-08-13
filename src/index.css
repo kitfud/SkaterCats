@@ -12,3 +12,33 @@ code {
     monospace;
 }
 
+
+@media(width<800px){
+  img{
+    height:350px
+  }
+}
+
+@media(width<300px){
+  img{
+    height:200px
+  }
+}
+
+@media(width>800px){
+  img{
+    height:700px
+  }
+}
+
+@media(width>1000px){
+  img{
+    height:900px
+  }
+}
+
+
+
+
+
+

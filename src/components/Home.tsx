@@ -22,10 +22,10 @@ var items: string[] = [
   
   return( 
     
-      <Carousel>
+    <Carousel>
       {
       items.map((i)=>{
-      return <img key={i} height='700' width='auto' src={i} alt="" />
+      return <img key={i}  height='700' width='auto' src={i} alt="" />
         })
       }
     </Carousel>

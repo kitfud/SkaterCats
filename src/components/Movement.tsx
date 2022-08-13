@@ -26,10 +26,11 @@ const Movement = (props: Props) => {
   return (
     <>
     <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-    <Card sx={{ maxWidth: 700 }}>
+    <Card sx={{ maxWidth: 800 }}>
       <CardMedia
+      sx={{height:'90%'}}
+        width='auto'
         component='img'
-        height='100%'
         image='https://ipfs.io/ipfs/QmYvvxaDgQ7Jz6GSVvBe161MQG2mX5qW4XkqrwLaAG6mS6?filename=516.png'
         />
         <CardContent>

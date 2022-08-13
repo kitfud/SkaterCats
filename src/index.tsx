@@ -15,6 +15,16 @@ const theme = createTheme({
   typography: {
     fontFamily: ["Rubik Marker Hatch", "cursive"].join(","),
   },
+  components: {
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          background: "lightgreen"
+        }
+      }
+    }
+  }
+
 });
 
 

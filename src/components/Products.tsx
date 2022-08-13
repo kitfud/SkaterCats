@@ -65,7 +65,7 @@ return (
       <>
       <Typography color="purple"sx={{marginBottom:2}}variant="h3">Web3 Connect Wallet to Verify NFT Ownership</Typography>
       <Box>
-      <img width="60%"src={achieveCat} alt="" />
+      <img className='Cat' src={achieveCat} alt="" />
       </Box>
       
       </>
@@ -93,11 +93,14 @@ return (
                   )
                 })
             }
-           <Grid sx={{marginTop:2, marginBottom:2}} sm={12} md={8} item>
-           <img width='50%'src={loveCat} alt="loveCat"/>
-           </Grid>
+         
+          
             
             </Grid>
+        
+        <Box sx={{marginTop:2}}>
+        <img width='auto'src={loveCat} alt="loveCat"/>
+        </Box>
             
             </>
             

@@ -3,8 +3,7 @@ import {
     AppBar,
     Toolbar,
     Typography,
-    Container,
-    Box
+   
   } from '@mui/material'
 
 type Props = {}
@@ -18,7 +17,7 @@ const Footer = (props: Props) => {
     SkaterCats 2022
   </Typography>
 </Toolbar>
-     </AppBar>
+</AppBar>
    
 
   )

@@ -43,3 +43,8 @@ a{
 text-decoration: none;
 }
 
+@media(width<400px){
+  img{
+    height:200
+  }
+}

@@ -7,10 +7,14 @@ Skatercats are a generative NFT project used to market physical products (amazon
 Each Skater Cat is composed of a variety of random attributes. I used AutoMinter to create the solidity back end contracts- as these contracts are verified via the app I then used Ethers.js and React to create a front end interface.
 
 <p align="center">
+## Team Page to view all the heros! 
 <img src="https://ipfs.io/ipfs/QmbN6FJzAHVtdRe89ZYVVeQk2Saac4qAu6ppk3L2YUJfHd?filename=sc1.png" width=70% height=70%>
+## Connect to MetaMask to view the secret 'stash' on the Products tab 
 <img src="https://ipfs.io/ipfs/Qmc1XgzSfBFrkMeNEf3fmZKdVtaRG2uAEaRSRhxwXA1wLz?filename=sc2.png" width=70% height=70%>
-<img src="https://ipfs.io/ipfs/QmWTyCvicLQR4xfCDqKZuAtxtDNRJcR42HxuEa6VfME8Bc?filename=sc3.png" width=70% height=70%>
+## A view of the minting page to get a Skater Cat NFT
 <img src="https://ipfs.io/ipfs/QmQKT3tAkRfJtmUdzGknvu9cEp4skmtsCNWh8G5e6g8iZx?filename=sc4.png" width=70% height=70%>
+## Once the dApp detects you have a Skater Cat NFT the products tab opens up
+<img src="https://ipfs.io/ipfs/QmWTyCvicLQR4xfCDqKZuAtxtDNRJcR42HxuEa6VfME8Bc?filename=sc3.png" width=70% height=70%>
 </p>
 
 ## IPFS Incorperation
@@ -27,7 +31,7 @@ npm start
 Get radical with the cats!
 
 ## Live dApp!
-You can also check the live dApp, [here](https://skater-cats.com). Also, check out our [walkthrough video](https://www.youtube.com/watch?v=UChbl-fFQ_8&t=193s)!
+You can also check the live dApp, [here](https://skater-cats.com). Also, check out our [walkthrough video](https://www.youtube.com/watch?v=UChbl-fFQ_8)!
 
 ## Used languages, frameworks, and tools
 <div style="background-color: gray;">

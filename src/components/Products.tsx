@@ -52,8 +52,15 @@ const MintNFT = ()=>{
     color="success"
     variant="contained" 
     onClick={()=> window.open('https://www.autominter.com/mint/62eabae4e456163f1a39b95b')} >Go To Minting Page</Button>
+    
     </Box>
-   <img width="40%"src={trustCat} alt="" />
+    <Grid container direction='column'>
+    <Grid item xs={12} sm={12}>
+    <img height='100%' width='auto' src={trustCat} alt="" />
+    </Grid>
+    </Grid>
+    
+   
     </>
   
   )

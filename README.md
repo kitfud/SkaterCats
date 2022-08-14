@@ -8,13 +8,21 @@ Each Skater Cat is composed of a variety of random attributes. I used AutoMinter
 
 <p align="center">
 ## Team Page to view all the heros! 
-<img src="https://ipfs.io/ipfs/QmbN6FJzAHVtdRe89ZYVVeQk2Saac4qAu6ppk3L2YUJfHd?filename=sc1.png" width=70% height=70%>
+<div>
+<img src="https://ipfs.io/ipfs/QmbN6FJzAHVtdRe89ZYVVeQk2Saac4qAu6ppk3L2YUJfHd?filename=sc1.png" width=70% height=70%
+</div>
 ## Connect to MetaMask to view the secret 'stash' on the Products tab 
+<div>
 <img src="https://ipfs.io/ipfs/Qmc1XgzSfBFrkMeNEf3fmZKdVtaRG2uAEaRSRhxwXA1wLz?filename=sc2.png" width=70% height=70%>
+</div>
 ## A view of the minting page to get a Skater Cat NFT
+<div>
 <img src="https://ipfs.io/ipfs/QmQKT3tAkRfJtmUdzGknvu9cEp4skmtsCNWh8G5e6g8iZx?filename=sc4.png" width=70% height=70%>
+</div>
 ## Once the dApp detects you have a Skater Cat NFT the products tab opens up
+<div>
 <img src="https://ipfs.io/ipfs/QmWTyCvicLQR4xfCDqKZuAtxtDNRJcR42HxuEa6VfME8Bc?filename=sc3.png" width=70% height=70%>
+</div>
 </p>
 
 ## IPFS Incorperation

@@ -1,5 +1,9 @@
 import React,{useEffect,useState} from 'react'
-import {Button} from '@mui/material'
+import {Button,
+    useTheme,
+    useMediaQuery,
+    dividerClasses
+} from '@mui/material'
 import { useAppSelector, useAppDispatch } from '../hooks'
 import {setAccount} from '../slices/userSlice'
 import {ethers} from 'ethers'
@@ -29,6 +33,8 @@ const signer = useSelector((state:RootState)=>state.nftcontract.signer)
  const userName = useAppSelector((state)=> state.user.defaultAccount)
  const dispatch = useAppDispatch()
 
+ const theme = useTheme();
+ const isMobile = useMediaQuery(theme.breakpoints.down("md"))
 
  const [connButtonText, setConnButtonText] = useState('Web3 Connect Wallet');
  const [accountchanging, setAccountChanging] = useState(false)
@@ -104,7 +110,7 @@ useEffect(() => {
     }
 
   return (
-  <>
+!isMobile?(
   <Button
     sx={{
         backgroundColor:connectButtonColor
@@ -113,7 +119,18 @@ useEffect(() => {
     onClick={()=>connectWalletHandler()}>
    {connButtonText} 
     </Button>
-  </>   
+)
+   :(
+    <Button
+    sx={{
+        backgroundColor:connectButtonColor
+    }}
+    variant="contained" 
+    >
+   {"Web3 Connect Wallet Is Not Available on Mobile. Please Connect Using Desktop + Metamask"} 
+    </Button>
+   )
+   
   )
 }
 

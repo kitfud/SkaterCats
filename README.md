@@ -1,7 +1,7 @@
 # Skater Cats: A Generative NFT project on Polygon
 
 ## Summary 
-Skatercats are a generative NFT project used to market physical products (amazon associate links). When someone buys a Skater Cat they get access to a protected view within the app (found on the 'products' tab). The main idea behind the application is to use Web3 connection via MetaMask in place of something like OAuth. The goal was also to present NFTs as an easy way to gate access to digitial content.
+Skatercats are a generative NFT project used to market physical products (amazon web links). When someone buys a Skater Cat they get access to a protected view within the app (found on the 'products' tab). The main idea behind the application is to use Web3 connection via MetaMask in place of something like OAuth. The goal was also to present NFTs as an easy way to gate access to digitial content.
 
 ## The NFTs
 Each Skater Cat is composed of a variety of random attributes. I used AutoMinter to create the solidity back end contracts- as these contracts are verified via the app I then used Ethers.js and React to create a front end interface.

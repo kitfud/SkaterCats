@@ -2,7 +2,6 @@ import React,{useEffect,useState} from 'react'
 import {Button,
     useTheme,
     useMediaQuery,
-    dividerClasses
 } from '@mui/material'
 import { useAppSelector, useAppDispatch } from '../hooks'
 import {setAccount} from '../slices/userSlice'
@@ -36,7 +35,7 @@ const signer = useSelector((state:RootState)=>state.nftcontract.signer)
  const theme = useTheme();
  const isMobile = useMediaQuery(theme.breakpoints.down("md"))
 
- const [connButtonText, setConnButtonText] = useState('Web3 Connect Wallet');
+ const [connButtonText, setConnButtonText] = useState('MetaMask Connect');
  const [accountchanging, setAccountChanging] = useState(false)
  const [errorMessage, setErrorMessage] = useState <string|null> (null);
  const [connectButtonColor, setConnectButtonColor] = useState<string>('purple')
@@ -127,7 +126,7 @@ useEffect(() => {
     }}
     variant="contained" 
     >
-   {"Web3 Connect Wallet Is Not Available on Mobile. Please Connect Using Desktop + Metamask"} 
+   {"Web3 Connect Wallet Is Not Available on Mobile. Please Connect To Polygon Mainnet Using Desktop + Metamask"} 
     </Button>
    )
    

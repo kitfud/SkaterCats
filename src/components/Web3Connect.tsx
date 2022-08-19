@@ -54,7 +54,7 @@ const signer = useSelector((state:RootState)=>state.nftcontract.signer)
                 setErrorMessage(error.message);
             });
     } else {
-        console.log('Need to install MetaMask');
+        alert('Need to install MetaMask');
         setErrorMessage('Please install MetaMask browser extension to interact');
     }
 }

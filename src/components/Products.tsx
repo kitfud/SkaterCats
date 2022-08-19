@@ -118,7 +118,7 @@ return (
          )
   ):(
     <>
-<Typography sx={{marginBottom:2}}>Make sure your wallet is connected to <a href="https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/">Polygon mainnet!</a></Typography>
+<Typography sx={{marginBottom:2}}>Make sure your wallet is connected to <a href="https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/" target="_blank">Polygon mainnet!</a></Typography>
 <CircularProgress/>
     </>
   )
